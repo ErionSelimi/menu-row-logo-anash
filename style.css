@@ -18,7 +18,7 @@ ul{
     align-items: center;
     font-size: 30px;
 }
-li:first-child{
+li:nth-child(1){
     margin-right: auto;
     display: flex;
     align-items: center;
@@ -35,7 +35,9 @@ a:hover{
     background-color: #0966C2;
 }
 a:hover i{
-    color: rgb(224, 156, 66);;
+    color: rgb(224, 156, 66);
+    animation-name: wobble;
+    animation-duration: 1s;
 }
 img {
     width: 80px;
@@ -46,4 +48,9 @@ img {
 span::before{
     content: '\a';
     white-space: pre;
+}
+span::after{
+    content: '';
+    font-size: 20px;
+    background-color: red;
 }
